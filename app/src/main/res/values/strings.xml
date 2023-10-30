@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">HikerManagementApp</string>
+    <string name="hike_name">Hike Name</string>
+    <string name="hike_location">Hike Location</string>
+    <string name="date_of_hike">Date of hike</string>
+    <string name="parking_available">Parking Available</string>
+    <string name="length_of_hike">Length of Hike</string>
+    <string name="name_of_the_hike">Name of the hike</string>
+    <string name="location_of_the_hike">Location of the hike</string>
+    <string name="date_of_the_hike">Date of the hike</string>
+    <string name="description">Description</string>
+    <string name="enter_hike_info">Enter Hike Info</string>
+    <string name="low">Low</string>
+    <string name="high">High</string>
+    <string name="hike_app_name_">M-Hiker app</string>
+    <string name="difficulty_of_hike">Difficulty of Hike</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="hike_description">Hike Description</string>
+    <string name="length_of_the_hike">Length of the hike</string>
+    <string name="view_hike_menu">View Previous Hikes</string>
+    <string name="enter_new_hike">Enter new hike</string>
+    <string name="observation_title">Observation Title</string>
+    <string name="observation_time">Observation Time</string>
+    <string name="observation_comments">Comments</string>
+
+</resources>
