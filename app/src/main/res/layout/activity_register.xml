@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
@@ -15,107 +16,92 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.Toolbar>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/modifyHikeName"
+        android:id="@+id/regHikeName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/custom_input"
         android:hint="@string/hike_name"
         android:inputType="text"
         android:minHeight="48dp"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/modifyHikeLocation"
+        app:layout_constraintBottom_toTopOf="@+id/regHikeLocation"
         app:layout_constraintEnd_toEndOf="@+id/toolbar"
         app:layout_constraintHorizontal_bias="0.733"
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
+
     <EditText
-        android:id="@+id/modifyHikeLocation"
+        android:id="@+id/regHikeLocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/custom_input"
         android:hint="@string/location_of_the_hike"
         android:inputType="text"
         android:minHeight="48dp"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/modifyHikeLength"
-        app:layout_constraintEnd_toEndOf="@+id/modifyHikeName"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_country"
+        app:layout_constraintEnd_toEndOf="@+id/regHikeName"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/modifyHikeName"
-        app:layout_constraintTop_toBottomOf="@+id/modifyHikeName" />
+        app:layout_constraintStart_toStartOf="@+id/regHikeName"
+        app:layout_constraintTop_toBottomOf="@+id/regHikeName" />
 
-
-    <Spinner
-        android:id="@+id/modifyCountry"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="30dp"
-        android:background="@drawable/custom_input"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/modifyHikeLocation"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="@+id/modifyHikeLocation"
-        app:layout_constraintTop_toBottomOf="@+id/modifyHikeLocation" />
     <EditText
-        android:id="@+id/modifyHikeLength"
+        android:id="@+id/regHikeLength"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/custom_input"
         android:hint="@string/length_of_the_hike"
         android:inputType="numberSigned"
         android:minHeight="48dp"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/modifyHikeDate"
-        app:layout_constraintEnd_toEndOf="@+id/modifyHikeLocation"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_country"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/modifyHikeLocation"
-        app:layout_constraintTop_toBottomOf="@+id/modifyCountry" />
+        app:layout_constraintStart_toStartOf="@+id/spinner_country"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_country" />
 
     <EditText
-        android:id="@+id/modifyHikeDate"
+        android:id="@+id/regHikeDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="8dp"
         android:background="@drawable/custom_input"
-        android:drawableRight="@drawable/calendar"
+        android:drawableEnd="@drawable/calendar"
         android:hint="@string/date_of_hike"
         android:inputType="date"
         android:minHeight="48dp"
         android:padding="10dp"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/modifyHikeParking"
-        app:layout_constraintEnd_toEndOf="@+id/modifyHikeLength"
+        app:layout_constraintBottom_toTopOf="@+id/regParking"
+        app:layout_constraintEnd_toEndOf="@+id/regHikeLength"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/modifyHikeLength"
-        app:layout_constraintTop_toBottomOf="@+id/modifyHikeLength" />
+        app:layout_constraintStart_toStartOf="@+id/regHikeLength"
+        app:layout_constraintTop_toBottomOf="@+id/regHikeLength" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/modifyHikeParking"
+        android:id="@+id/regParking"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="30dp"
         android:checked="false"
         android:minHeight="48dp"
-        android:padding="8dp"
+        android:padding="0dp"
         android:showText="true"
         android:text="@string/parking_available"
         android:textOff="@string/no"
@@ -123,28 +109,28 @@
         android:textSize="18sp"
         android:thumb="@drawable/custom_thumb"
         android:thumbTextPadding="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/modifyHikeDifficulty"
-        app:layout_constraintEnd_toEndOf="@+id/modifyHikeDate"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/modifyHikeDate"
-        app:layout_constraintTop_toBottomOf="@+id/modifyHikeDate"
+        app:layout_constraintBottom_toTopOf="@+id/regRdoDifficulty"
+        app:layout_constraintEnd_toEndOf="@+id/regHikeDate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/regHikeDate"
+        app:layout_constraintTop_toBottomOf="@+id/regHikeDate"
         app:layout_constraintVertical_bias="0.5"
         app:showText="true"
         app:track="@drawable/custom_track" />
 
     <RadioGroup
         android:orientation="horizontal"
-        android:id="@+id/modifyHikeDifficulty"
+        android:id="@+id/regRdoDifficulty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="13dp"
-        app:layout_constraintBottom_toTopOf="@+id/modifyHikeDescription"
-        app:layout_constraintEnd_toEndOf="@+id/modifyHikeParking"
-        app:layout_constraintStart_toStartOf="@+id/modifyHikeParking"
-        app:layout_constraintTop_toBottomOf="@+id/modifyHikeParking">
+        app:layout_constraintBottom_toTopOf="@+id/regRdoHikeType"
+        app:layout_constraintEnd_toEndOf="@+id/regParking"
+        app:layout_constraintStart_toStartOf="@+id/regParking"
+        app:layout_constraintTop_toBottomOf="@+id/regParking">
 
         <TextView
             android:layout_width="wrap_content"
@@ -154,45 +140,40 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/rdoSmooth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:minHeight="48dp"
-            android:checked="false"
-            android:text="@string/low"
-            app:layout_constraintEnd_toEndOf="@+id/switchCompat"
-            app:layout_constraintStart_toStartOf="@+id/switchCompat"
-            app:layout_constraintTop_toBottomOf="@+id/switchCompat" />
 
         <RadioButton
-            android:id="@+id/rdoChallenge"
+
+            android:id="@+id/regRdoSmooth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:minHeight="48dp"
-            android:checked="false"
-            android:text="@string/high"
-            app:layout_constraintEnd_toEndOf="@+id/switchCompat"
-            app:layout_constraintStart_toStartOf="@+id/switchCompat"
-            app:layout_constraintTop_toBottomOf="@+id/switchCompat" />
+            android:text="@string/low" />
+
+        <RadioButton
+            android:id="@+id/regRdoChallenge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:text="@string/high" />
+
+
     </RadioGroup>
 
     <RadioGroup
-        android:id="@+id/modifyHikeType"
+        android:orientation="horizontal"
+        android:id="@+id/regRdoHikeType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="8dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/modifyHikeDescription"
-        app:layout_constraintEnd_toEndOf="@+id/modifyHikeDifficulty"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/regHikeDescription"
+        app:layout_constraintEnd_toEndOf="@+id/regRdoDifficulty"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/modifyHikeDifficulty"
-        app:layout_constraintTop_toBottomOf="@+id/modifyHikeDifficulty">
+        app:layout_constraintStart_toStartOf="@+id/regRdoDifficulty"
+        app:layout_constraintTop_toBottomOf="@+id/regRdoDifficulty">
 
         <TextView
             android:layout_width="wrap_content"
@@ -208,7 +189,7 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/rdoOneway"
+            android:id="@+id/regRdoOneway"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -220,7 +201,7 @@
             app:layout_constraintTop_toBottomOf="@+id/regRdoDifficulty" />
 
         <RadioButton
-            android:id="@+id/rdoRoundTrip"
+            android:id="@+id/regRdoRoundTrip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -235,38 +216,51 @@
     </RadioGroup>
 
     <EditText
-        android:id="@+id/modifyHikeDescription"
+        android:id="@+id/regHikeDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/custom_input"
         android:hint="@string/hike_description"
         android:minHeight="48dp"
         android:padding="10dp"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
-        app:layout_constraintEnd_toEndOf="@+id/modifyHikeType"
-        app:layout_constraintStart_toStartOf="@+id/modifyHikeType"
-        app:layout_constraintTop_toBottomOf="@+id/modifyHikeType"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegisterHike"
+        app:layout_constraintEnd_toEndOf="@+id/regRdoHikeType"
+        app:layout_constraintStart_toStartOf="@+id/regRdoHikeType"
+        app:layout_constraintTop_toBottomOf="@+id/regRdoHikeType"
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/btnUpdate"
+        android:id="@+id/btnRegisterHike"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/custom_button"
         android:padding="8dp"
-        android:text="Update Hike"
+        android:text="@string/enter_hike_info"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/modifyHikeDescription"
+        app:layout_constraintEnd_toEndOf="@+id/regHikeDescription"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/modifyHikeDescription"
-        app:layout_constraintTop_toBottomOf="@+id/modifyHikeDescription" />
+        app:layout_constraintStart_toStartOf="@+id/regHikeDescription" />
+
+    <Spinner
+        android:id="@+id/spinner_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/custom_input"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/regHikeLocation"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/regHikeLocation"
+        app:layout_constraintTop_toBottomOf="@+id/regHikeLocation" />
 </androidx.constraintlayout.widget.ConstraintLayout>

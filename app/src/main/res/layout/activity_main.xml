@@ -16,189 +16,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.Toolbar>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/edtTxtName"
+
+    <TextView
+        android:id="@+id/welcomeText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginRight="30dp"
-        android:background="@drawable/custom_input"
-        android:hint="@string/hike_name"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/edtTxtLocation"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.733"
-        app:layout_constraintStart_toStartOf="@+id/toolbar"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-    <EditText
-        android:id="@+id/edtTxtLocation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
-        android:background="@drawable/custom_input"
-        android:hint="@string/location_of_the_hike"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/edtTxtLength"
-        app:layout_constraintEnd_toEndOf="@+id/edtTxtName"
+        android:layout_marginTop="320dp"
+        android:text="@string/welcome_msg"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtTxtName"
-        app:layout_constraintTop_toBottomOf="@+id/edtTxtName" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
-
-    <EditText
-        android:id="@+id/edtTxtLength"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
-        android:background="@drawable/custom_input"
-        android:hint="@string/length_of_the_hike"
-        android:inputType="numberSigned"
-        android:minHeight="48dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/edtTxtDate"
-        app:layout_constraintEnd_toEndOf="@+id/edtTxtLocation"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtTxtLocation"
-        app:layout_constraintTop_toBottomOf="@+id/edtTxtLocation" />
-
-    <EditText
-        android:id="@+id/edtTxtDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/custom_input"
-        android:drawableRight="@drawable/calendar"
-        android:hint="@string/date_of_hike"
-        android:inputType="date"
-        android:minHeight="48dp"
-        android:padding="10dp"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/parking"
-        app:layout_constraintEnd_toEndOf="@+id/edtTxtLength"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtTxtLength"
-        app:layout_constraintTop_toBottomOf="@+id/edtTxtLength" />
-
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/parking"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
-        android:checked="false"
-        android:minHeight="48dp"
-        android:padding="8dp"
-        android:showText="true"
-        android:text="@string/parking_available"
-        android:textOff="@string/no"
-        android:textOn="@string/yes"
-        android:textSize="18sp"
-        android:thumb="@drawable/custom_thumb"
-        android:thumbTextPadding="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/rdoDifficulty"
-        app:layout_constraintEnd_toEndOf="@+id/edtTxtDate"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtTxtDate"
-        app:layout_constraintTop_toBottomOf="@+id/edtTxtDate"
-        app:layout_constraintVertical_bias="0.5"
-        app:showText="true"
-        app:track="@drawable/custom_track" />
-
-    <RadioGroup
-        android:id="@+id/rdoDifficulty"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="13dp"
-        app:layout_constraintBottom_toTopOf="@+id/edtTxtDescription"
-        app:layout_constraintEnd_toEndOf="@+id/parking"
-        app:layout_constraintStart_toStartOf="@+id/parking"
-        app:layout_constraintTop_toBottomOf="@+id/parking">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Level of Difficulty"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <RadioButton
-            android:id="@+id/rdoSmooth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:minHeight="48dp"
-            android:onClick="checkRadio"
-            android:text="@string/low"
-            app:layout_constraintEnd_toEndOf="@+id/switchCompat"
-            app:layout_constraintStart_toStartOf="@+id/switchCompat"
-            app:layout_constraintTop_toBottomOf="@+id/switchCompat" />
-
-        <RadioButton
-            android:id="@+id/rdoChallenge"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:minHeight="48dp"
-            android:onClick="checkRadio"
-            android:text="@string/high"
-            app:layout_constraintEnd_toEndOf="@+id/switchCompat"
-            app:layout_constraintStart_toStartOf="@+id/switchCompat"
-            app:layout_constraintTop_toBottomOf="@+id/switchCompat" />
-    </RadioGroup>
-
-    <EditText
-        android:id="@+id/edtTxtDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/custom_input"
-        android:hint="@string/hike_description"
-        android:minHeight="48dp"
-        android:padding="10dp"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnApply"
-        app:layout_constraintEnd_toEndOf="@+id/rdoDifficulty"
-        app:layout_constraintStart_toStartOf="@+id/rdoDifficulty"
-        app:layout_constraintTop_toBottomOf="@+id/rdoDifficulty"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <Button
-        android:id="@+id/btnApply"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/custom_button"
-        android:padding="8dp"
-        android:text="@string/enter_hike_info"
-        android:textSize="20sp"
+        android:layout_marginTop="38dp"
+        android:text="@string/welcome_extra_msg"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edtTxtDescription"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtTxtDescription"
-        app:layout_constraintTop_toBottomOf="@+id/edtTxtDescription" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/welcomeText"
+        app:layout_constraintVertical_bias="0.103" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

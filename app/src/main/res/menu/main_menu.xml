@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
         android:id="@+id/itemView"
         android:title="@string/view_hike_menu"
@@ -11,4 +12,13 @@
         android:title="@string/enter_new_hike"
         app:showAsAction="never"
         />
+    <item
+        android:id="@+id/itemDelete"
+        android:title="@string/delete_all_hikes"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/itemSearch"
+        android:title="@string/search_hikes"
+        app:showAsAction="never"/>
 </menu>

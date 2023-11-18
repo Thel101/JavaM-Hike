@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">HikerManagementApp</string>
+    <string name="app_name">M- Hike</string>
     <string name="hike_name">Hike Name</string>
     <string name="hike_location">Hike Location</string>
     <string name="date_of_hike">Date of hike</string>
     <string name="parking_available">Parking Available</string>
-    <string name="length_of_hike">Length of Hike</string>
+    <string name="length_of_hike">Length of Hike in meters</string>
     <string name="name_of_the_hike">Name of the hike</string>
     <string name="location_of_the_hike">Location of the hike</string>
     <string name="date_of_the_hike">Date of the hike</string>
@@ -23,5 +23,23 @@
     <string name="observation_title">Observation Title</string>
     <string name="observation_time">Observation Time</string>
     <string name="observation_comments">Comments</string>
+    <string name="welcome_msg">Record</string>
+    <string name="welcome_extra_msg">Your Hiking Experience</string>
+    <string name="observation_id">Observation ID</string>
+    <string name="delete_all_hikes">Delete All Hikes</string>
+    <string name="search_hikes">Search Hikes</string>
+    <string name="search">Search</string>
+    <string name="round_trip">Round-trip</string>
+    <string name="one_way">One-way</string>
+    <string name="country_of_location">Country of location</string>
+    <string name="hike_type">Hike Type</string>
+    <string name="parking_availability">Parking Availability</string>
+    <string-array name="countries">
+        <item>UK</item>
+        <item>US</item>
+        <item>Europe</item>
+        <item>Japan</item>
+        <item>Korea</item>
+    </string-array>
 
 </resources>

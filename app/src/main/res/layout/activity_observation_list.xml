@@ -6,38 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ObservationListActivity">
 
-    <LinearLayout
-        android:id="@+id/hike_info"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="vertical"
-        android:layout_marginHorizontal="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/observationListView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178">
-        <TextView
-            android:id="@+id/txtHikeName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=""/>
-        <TextView
-            android:id="@+id/txtHikeDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text=""/>
 
-        <TextView
-            android:id="@+id/txtHikeLocation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text=""/>
-
-    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/observationListView"
@@ -50,6 +19,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hike_info" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
